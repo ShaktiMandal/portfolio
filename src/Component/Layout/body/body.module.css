@@ -1,0 +1,66 @@
+
+
+.col-md-6
+{
+    border-right: 2px solid red;
+}
+
+.socialMedia:hover
+{
+    cursor: pointer;
+}
+
+.roles
+{
+   height: 30px;
+   overflow: hidden;   
+   margin-left: 0px;
+}
+
+.roles li{
+    color: red;
+    list-style: none;
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+    animation: roleslide 6s steps(4) infinite;
+}
+
+.roles li span
+{
+    position: relative;
+}
+
+.roles li span::after
+{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #f9f9f9;
+    border-left: 2px solid black;
+    animation: roletyping 10s steps(18) infinite;
+}
+
+@keyframes roletyping {
+    100%{
+        left: 100%;
+        margin: 0 -40px 0 40px;
+    }
+}
+
+@keyframes roleslide {
+    100%{
+        top: -350px;
+    }
+}
+
+@media(max-width: 950px)
+{
+    .profileImage
+    {
+        width:auto;
+        height: auto;
+    }
+}

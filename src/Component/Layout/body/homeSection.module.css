@@ -1,0 +1,41 @@
+.profileImage
+{
+    border-radius: 50%;
+    border-radius: 100%;
+    padding: 0;
+    border: 14px solid #fff;
+    width: 394px;
+    height: 394px;
+    box-shadow: 0 20px 40px rgb(0 0 0 / 10%), 0 20px 40px hsl(0deg 0% 100% / 15%);
+}
+
+.description
+{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: start;
+}
+
+.workType
+{
+    color: #dc3545;
+}
+
+.workType:after{
+    content: "";
+    position: absolute;
+    width:1px;
+    height: 6%;
+    border-right:2px solid red;
+    animation: blink 0.5s ease infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
