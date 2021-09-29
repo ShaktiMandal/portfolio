@@ -3,3 +3,14 @@
     font-weight: 800px;
     text-transform: uppercase;
 }
+
+.logoStyle
+{
+    font-family: 'Dancing Script', cursive;
+}
+
+.nav-link
+{
+    visibility: hidden;
+    display: none;
+}

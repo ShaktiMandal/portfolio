@@ -23,7 +23,7 @@ const AboutSection = () => {
         }, 80);
 
         const codeCountHandler = setTimeout(()=> {
-            setLineOfCode(lineOfCodeCount + (560000/500));
+            setLineOfCode(lineOfCodeCount + (160000/500));
         }, 1);
 
         if(projectCount === 20)
@@ -36,7 +36,7 @@ const AboutSection = () => {
             clearTimeout(portFolioCountHandler);
         }
 
-        if(lineOfCodeCount === 560000)
+        if(lineOfCodeCount === 160000)
         {
             clearTimeout(codeCountHandler);
         }

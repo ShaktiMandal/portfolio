@@ -1,14 +1,4 @@
 import React from 'react';
-// import HomeSection from './HomeSection';
-// import PortfolioSection from './PortfolioSection';
-// import ContactSection from './ContactSection';
-// import AboutSection from './AboutSection';
-
-// import HomeSection from './HomeSection';
-// import PortfolioSection from './PortfolioSection';
-// import ContactSection from './ContactSection';
-// import AboutSection from './AboutSection';
-
 const  HomeSection = React.lazy(() => import('./HomeSection'));
 const  PortfolioSection = React.lazy(() => import('./PortfolioSection'));
 const  ContactSection = React.lazy(() => import('./ContactSection'));

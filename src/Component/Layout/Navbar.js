@@ -1,12 +1,16 @@
 import React from 'react';
 import './Navbar.module.css';
+import logo from '../../images/Logo.jpg';
+import classes from './Navbar.module.css';
 
 const NavBar = () => {
 
     return(
         <nav className={`navbar navbar-expand-lg navbar-light`}>
         <div className={`container-lg`}>
-          <a className={`navbar-brand text-danger`} href="#">Portfolio</a>
+          <a className={`navbar-brand text-danger`} href="#">
+            <p className={classes.logoStyle}>Shakti</p>
+          </a>
           <button className={`navbar-toggler`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className={`navbar-toggler-icon`}></span>
           </button>

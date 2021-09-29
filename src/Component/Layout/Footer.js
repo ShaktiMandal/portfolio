@@ -5,7 +5,7 @@ const Footer = () => {
     return(
         <div className={`text-center`}>
            <p>
-               you can copy<span>&#169;</span>copyright issues
+                2021<span>&#169;</span>no copyright issue
             </p>
         </div>
     )
