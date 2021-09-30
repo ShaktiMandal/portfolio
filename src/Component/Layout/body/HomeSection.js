@@ -5,7 +5,7 @@ import classes from './homeSection.module.css';
 
 const HomeSection = () => {
 
-    const wordList = ["Forntend Developer", "Web Developer", "Windows Developer"];
+    const wordList = ["Frontend Developer", "Web Developer", "Windows Developer"];
     const animatedText = TypingAnimation(wordList);
     return (
         <section className={'py-3'}>
