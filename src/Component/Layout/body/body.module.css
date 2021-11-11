@@ -8,6 +8,15 @@
 .socialMedia:hover
 {
     cursor: pointer;
+  
+
+}
+
+.socialMedia
+{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
 }
 
 .roles
@@ -42,6 +51,7 @@
     border-left: 2px solid black;
     animation: roletyping 10s steps(18) infinite;
 }
+
 
 @keyframes roletyping {
     100%{

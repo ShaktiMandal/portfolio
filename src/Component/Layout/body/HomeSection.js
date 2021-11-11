@@ -22,7 +22,7 @@ const HomeSection = () => {
                             <h3 className={classes.workType} id="workTypeId">{animatedText}</h3>                        
                         </div>
                         <div className={classes.description}> 
-                            <h2>I design, build digital products and love what i do </h2> 
+                            <p>I'm a front end developer, and I create clean and responsive websites, love what I do.</p> 
                         </div>
                     </div>
                 </div>

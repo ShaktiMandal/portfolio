@@ -42,9 +42,14 @@ const ContactSection = ()  => {
                 </div>
             </div>
             <div className={`row mt-5 align-items-center justify-content-center`}>
-                <div className={`col-md-6`}>
-                    <p className={`text-center`}>same places you can find me</p>
-                    <div className={`d-flex align-items-center justify-content-center`}>
+                <div className={`col-md-6 p-3 border-rounded border`}> 
+                    <div className={`col-sm-6 mb-5 d-flex align-items-center justfy-content-center text-center`}>
+                        If you have any questions or you want 
+                        to hire me, feel free to contact me at 
+                        one of these places or just send me a message in the contact form.
+                    </div>                 
+                    
+                    <div className={`col-sm-6 d-flex align-items-center justify-content-center`}>
                         <a href="mailto:sontu.friends@gmail.com" className={classes.socialMedia} style={{padding:"5px"}}>                                
                             <MdEmail  fontSize="30px" color="red" className={`text-danger`}/>                                
                         </a>

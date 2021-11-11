@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import classes from './body.module.css';
 import {ImLinkedin2} from 'react-icons/im';
+import classes from './body.module.css'
 import {AiFillGithub, AiFillHtml5} from 'react-icons/ai';
 import {DiCss3, DiJavascript, DiAngularSimple} from 'react-icons/di';
 import {SiTypescript, SiCsharp, SiReact, SiRedux} from 'react-icons/si';
+import pdf from '../../../files/Resume.pdf';
 
 
 const AboutSection = () => {
@@ -11,8 +12,9 @@ const AboutSection = () => {
     const [projectCount, setProjectCount] = useState(0);
     const [portfolioCount, setPortFolioCount] = useState(0);
     const [lineOfCodeCount, setLineOfCode] = useState(0);
-
-
+    
+    console.log("thus is about rendering");
+    
     useEffect(() => {
         const projectCountHandler = setTimeout(()=> {
             setProjectCount(projectCount + 1);
@@ -43,7 +45,7 @@ const AboutSection = () => {
     },[projectCount, portfolioCount, lineOfCodeCount]);
 
     return (
-        <section className={`bg-white py-5`} id="aboutSection">
+        <section className={`bg-white py-5`} id="aboutSection" data-testid="aboutSection">
         <div className={`container-lg py-2`}>
             <div className={`row justify-content-center`}>
                 <div className={`col`}>
@@ -55,9 +57,9 @@ const AboutSection = () => {
             <div className={`row mt-5`}>
                 <div className={`col-md-7 p-5`}>
                     <div className={`row mb-5`}>
-                        <p>
-                            <h2 className={`mb-5`}>Hey, I am shakti, with over 10 yreas of experience in designing developing forntend 
-                            product.</h2>
+                        <>
+                            <h3 className={`mb-5`}>Hey, I am shakti, with over 10 yreas of experience in designing developing forntend 
+                            product.</h3>
                             
                             <h3 className={`fs-5 text-dark`}>
                                 I like to develop and learn new things over the course of my career and life.
@@ -65,7 +67,7 @@ const AboutSection = () => {
                                 If you would like to more of my professional and educational, please go through my resume.
                                 When I am not in working mode, love to play with my DSLR to capture beautiful moments around me.
                             </h3>
-                        </p>
+                        </>
                     </div>
                     <div className={`row mb-5`}>
                         <div className={`col-md-4`}>
@@ -82,17 +84,16 @@ const AboutSection = () => {
                         </div>
                     </div>
                     <div className={`row`}>
-                        <div className={`col-md-6`}>
-                        <input type="button" className={`btn btn-danger`} value="Download CV"></input>
+                        <div className={`col-md-8 d-flex`}>
+                            <input type="button" className={`btn btn-danger m-2`} value="Download Resume"></input>
+                            <a className={`btn btn-danger m-2`} href={pdf} target="_blank" >View Resume</a>
                         </div>
-                        <div className={`col-md-auto align-items-center justify-content-center`}>
-                        <a href="https://www.linkedin.com/in/shaktishankarmandal" target="_blank" className={classes.socialMedia}>
-                            <ImLinkedin2 fontSize="30px" className="indigo-text"/>
+                        <div className={`col-md-4 d-flex`}>
+                            <a href="https://github.com/s2304" target="_blank" rel="noopener" className={classes.socialMedia} style={{padding:"5px"}}>                                
+                                <AiFillGithub fontSize="30px" color="black" className="indigo-text"/>                        
                             </a>
-                        </div>
-                        <div className={`col-md-auto`}>
-                            <a href="https://github.com/s2304" target="_blank" className={classes.socialMedia}>
-                                <AiFillGithub fontSize="30px" color="black" className="indigo-text"/>
+                            <a href="https://www.linkedin.com/in/shaktishankarmandal"  rel="noopener" target="_blank" className={classes.socialMedia} style={{padding:"5px"}}>                                
+                                <ImLinkedin2 fontSize="30px" className="indigo-text"/>                          
                             </a>
                         </div>
                     </div>

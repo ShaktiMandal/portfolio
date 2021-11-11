@@ -1,0 +1,13 @@
+.portfolioVideo
+{
+    height: 200px;
+    width: 70%;
+    object-fit: fill;
+    aspect-ratio: 16 / 7;
+}
+
+.aboutPortfolio
+{
+    text-align: justify;
+    padding: 10px;
+}

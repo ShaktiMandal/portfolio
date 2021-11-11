@@ -35,7 +35,7 @@ export const TypingAnimation = (wordList) => {
                         currentText = wordList[wordCount];   
                         setAnimatedText(currentText.slice(0, textCurrentIndex)); 
                         setTextCurrentIndex(textCurrentIndex + 1);
-                        console.log("current and length", wordCount, wordList.length);
+                      
                         if(currentText.length === animatedText.length)
                         {
                             console.log("current3");
@@ -57,7 +57,7 @@ export const TypingAnimation = (wordList) => {
                 {
                     if(textCurrentIndex === 0)
                     {  
-                        console.log("Count ", wordCount);
+                       
                         setwordCount(wordCount + 1);                 
                         setTextCurrentIndex(1);
                         setTypeStatus(type.typing);
