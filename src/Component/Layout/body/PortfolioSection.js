@@ -49,8 +49,10 @@ const PortfolioSection = () => {
                             </video>
                             
                             <div className={`row align-items-center justify-content-center`}>  
-                            <span className={classes.aboutPortfolio}>Retail Karbar is built to help all retailers to perform their daily business acivities such as adding, updating, orderring prodcut. 
-                                    This is purely built in reactJS and nodeJS.</span>                       
+                            <span className={classes.aboutPortfolio}>
+                                    Banking management product is built to facilitate registration, 
+                                    apply loan and update customer.
+                                    Angular in the frontend and C# is in the backend with sql.</span>                       
                                 <div className={`col-md-auto m-2`}>                              
                                     <a className={`btn btn-danger`} href="#" target="_blank" rel="noopener">
                                         Live Demo    
