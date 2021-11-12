@@ -3,6 +3,8 @@ import classes from './PortfolioSection.module.css'
 import {AiFillGithub} from 'react-icons/ai';
 import BMS from '../../../images/BMS.mp4';
 import RetailKarbar from '../../../images/RetailKarbar.mp4';
+import Portfolio from '../../../images/portfolio.mp4';
+
 
 const PortfolioSection = () => {
     return (
@@ -15,7 +17,7 @@ const PortfolioSection = () => {
                         </div>
                     </div>
                 </div> 
-                <div className={`row text-center d-flex align-items-center justify-content-center`}>
+                <div className={`row text-center`}>
                     <div className={`col-md-5`}>  
                         <div className={`shadow p-3 mb-5 bg-light rounded`}> 
                             <p className={`fs-5 fw-bold`}>Retail Karbar</p>                          
@@ -60,6 +62,32 @@ const PortfolioSection = () => {
                                 </div>
                                 <div className={`col-md-auto`}>                              
                                     <a className={`btn btn-secondary`} href="https://github.com/s2304/BankManagementSystem" target="_blank" rel="noopener">
+                                        Repo     
+                                        <AiFillGithub  className="indigo-text"/>
+                                    </a>                                 
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`col-md-5`}>  
+                        <div className={`shadow p-3 mb-5 bg-grey rounded`}>  
+                            <p className={`fs-5 fw-bold`}>Portfolio</p>                        
+                            <video className={classes.portfolioVideo} alt="video is not supported in this browser" autoPlay loop muted controls>
+                                <source src={Portfolio} type="video/mp4" />
+                            </video>
+                            
+                            <div className={`row align-items-center justify-content-center`}>  
+                                <span className={classes.aboutPortfolio}>
+                                    This is my portfolio project, built it using react with bootstrap.
+                                </span>                       
+                                <div className={`col-md-auto m-2`}>                              
+                                    <a className={`btn btn-danger`} href="https://shakti-shankar-mandal.herokuapp.com/" target="_blank" rel="noopener">
+                                        Live Demo    
+                                    </a>  
+                                </div>
+                                <div className={`col-md-auto`}>                              
+                                    <a className={`btn btn-secondary`} href="https://https://github.com/s2304/portfolio" target="_blank" rel="noopener">
                                         Repo     
                                         <AiFillGithub  className="indigo-text"/>
                                     </a>                                 
