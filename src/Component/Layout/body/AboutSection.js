@@ -85,7 +85,9 @@ const AboutSection = () => {
                     </div>
                     <div className={`row`}>
                         <div className={`col-md-8 d-flex`}>
-                            <input type="button" className={`btn btn-danger m-2`} value="Download Resume"></input>
+                            <a href={pdf} download="resume">
+                                <input type="button" className={`btn btn-danger m-2`} value="Download Resume"></input>
+                            </a>
                             <a className={`btn btn-danger m-2`} href={pdf} target="_blank" >View Resume</a>
                         </div>
                         <div className={`col-md-4 d-flex`}>
@@ -141,7 +143,6 @@ const AboutSection = () => {
                             </div>
                         </div>
                     </div>
-                
                 </div>
             </div>
         </div>
