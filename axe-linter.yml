@@ -1,0 +1,11 @@
+excludes:
+  - failing-test/**/*.html
+rules:
+  jsx-a11y-fixer: true
+tags:
+  - wcag2a
+  - wcag2aa
+  - wcag21a
+  - wcag21aa
+can_request_changes: false
+can_fail_status_check: false
