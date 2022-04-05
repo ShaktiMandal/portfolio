@@ -1,0 +1,28 @@
+
+.scrollableelement
+{
+   opacity: 0 !important;
+}
+
+.scrollableelement.scrolled
+{
+   opacity: 1 !important;
+}
+
+.appearbottom
+{
+    animation: appear-bottom 5s ease-in-out both;
+}
+
+
+@keyframes appear-bottom {
+
+    0% {    
+       transform: translateX(-500px); 
+    }
+
+    100%{
+       transform: translateX(0px); 
+    }
+    
+}

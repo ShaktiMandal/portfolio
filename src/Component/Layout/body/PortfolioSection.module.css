@@ -1,13 +1,60 @@
-.portfolioVideo
+/* .portfolioVideo
 {
     height: 300px;
     width: 100%;
     object-fit: fill;
-    aspect-ratio: 16 / 7;
+    aspect-ratio: 16 / 9;
 }
 
 .aboutPortfolio
 {
     text-align: justify;
     padding: 10px;
+} */
+
+.divcarousel
+{
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+/* .videocontainer
+{
+    text-align: center;
+    width: 550px;
+    margin: 5px;
+    display: grid;
+
+} */
+
+.carouselitem
+{
+    width: 550px;
+    height: 500px;
+    background-color: red;
+
+}
+
+.leftarrow{
+    top: 50%;
+    left: 0;
+    float: left;
+    position: relative;
+}
+
+.rightarrow {
+    top: 50%;
+    right: 0;
+    float: right;
+    position: relative;
+}
+
+.videocontainer
+{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 10px;
 }

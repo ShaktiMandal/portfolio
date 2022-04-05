@@ -1,4 +1,5 @@
 import React from 'react';
+import Loading from '../../Loading';
 const  HomeSection = React.lazy(() => import('./HomeSection'));
 const  PortfolioSection = React.lazy(() => import('./PortfolioSection'));
 const  ContactSection = React.lazy(() => import('./ContactSection'));
@@ -8,12 +9,12 @@ const Body = () => {
 
  
     return(
-        <React.Fragment>
+        <React.Suspense fallback={<Loading/>}>
             <HomeSection/>
             <AboutSection/>
             <PortfolioSection/>   
             <ContactSection/>        
-        </React.Fragment>
+        </React.Suspense>
     )
 }
 
