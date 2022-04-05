@@ -13,7 +13,7 @@ const PortfolioSection = () => {
                 <div className={`row justify-content-center mb-5`}>
                     <div className={`col`}>
                         <div className={classes.sectionTitle}>
-                            <p className={`text-center fs-2 text-danger`}>some of my work</p>
+                            <p className={`text-center fs-2 text-danger`}>my works</p>
                         </div>
                     </div>
                 </div> 
