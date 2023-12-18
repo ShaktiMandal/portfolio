@@ -1,21 +1,16 @@
-
-.scrollableelement
-{
-   opacity: 0 !important;
+.scrollableelement {
+  opacity: 0 !important;
 }
 
-.scrollableelement.scrolled
-{
-   opacity: 1 !important;
+.scrollableelement.scrolled {
+  opacity: 1 !important;
 }
 
-.appearbottom
-{
-    animation: appear-bottom 5s ease-in-out both;
+.appearbottom {
+  animation: appear-bottom 5s ease-in-out both;
 }
 
-
-@keyframes appear-bottom {
+/* @keyframes appear-bottom {
 
     0% {    
        transform: translateX(-500px); 
@@ -25,4 +20,4 @@
        transform: translateX(0px); 
     }
     
-}
+} */
