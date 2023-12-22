@@ -29,7 +29,7 @@ const HomeSection = () => {
               />
             </div>
           </div>
-          <div className={`col-md-7`}>
+          <div className={`col-md-7 max-w-70`}>
             <div
               className={`p-10 d-flex flex-column align-items justify-content-center`}>
               <div className={`mb-5`}>
