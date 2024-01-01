@@ -17,30 +17,29 @@ const PortfolioSection = () => {
       </div>
       <div className={`flex flex-column md:flex-column w-full h-full`}>
         <div
-          className={`mb-3 w-full h-full p-5 d-flex align-items-center justify-content-center`}>
+          className={`mb-3 w-full h-full  p-5 d-flex align-items-center justify-content-center`}>
           <div className={`top-0 right-0 relative  w-full h-full`}>
             <div>
               <img
                 src={PortfolioBanner}
                 alt="Portfolio"
-                className="h-full object-cover"
+                className="h-full object-cover hover:pointer-events-auto"
               />
             </div>
 
             <div
-              className={`absolute top-0 right-0 z-10 w-full md:w-1/2 h-full p-10 bg-red-100 opacity-0 hover:opacity-100`}>
+              className={`absolute hidden top-0 right-0 z-10 w-full md:w-1/2 sm:block  h-full p-10 bg-red-100 opacity-0 hover:opacity-100`}>
               <h3>Portfolio</h3>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                <strong>Description:</strong> <br></br> As a web developer, i
+                would like to have my own portfolio, showcasing my transition
+                into the world of React.js. It serves as my first React-based
+                portfolio, demonstrating a shift toward modern web development
+                <br></br>
+                <br></br>
+                <br></br>
+                <strong>Skills:</strong> <br></br> React, Javascript, css,
+                tailwind
               </p>
             </div>
           </div>
@@ -56,12 +55,27 @@ const PortfolioSection = () => {
               />
             </div>
             <div
-              className={`absolute top-0 right-0 z-10 w-full md:w-1/2 h-full p-10 bg-red-100 opacity-0 hover:opacity-100`}>
+              className={`absolute hidden sm:block top-0 right-0 z-10 w-full md:w-1/2 h-full p-10 bg-red-100 opacity-0 hover:opacity-100`}>
               <h3>Employee Contact</h3>
               <p>
-                Employee contact is a dictionary where you can add an employee
-                contact. User can even can create a group under which they can
-                add the contact details. Purpose of this app was self learnings.
+                <strong>Description:</strong> <br></br> This project served as a
+                hands-on exercise to reinforce my understanding and proficiency
+                in React.js. While the app itself is a straightforward employee
+                contact dictionary, its purpose goes beyond the immediate
+                functionality. It represents a dedicated effort to apply React
+                concepts, state management, and component architecture in a
+                real-world scenario.
+                <br></br>
+                <br></br>
+                <br></br>
+                <strong>Key Features:</strong>
+                <br></br>- Displayed a list of employees with their contact
+                details. <br></br> - Implemented a search feature to quickly
+                find specific employees. <br></br> - Enabled users to add new
+                contacts or edit existing ones. <br></br>
+                <br></br>
+                <br></br>
+                <strong>Skills:</strong> <br></br> React, Javascript, css
               </p>
             </div>
           </div>

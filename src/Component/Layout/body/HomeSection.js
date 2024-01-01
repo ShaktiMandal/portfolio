@@ -16,7 +16,7 @@ const HomeSection = () => {
     <section className={"py-3"}>
       <div className={`container-fluid `}>
         <div
-          className={`min-vh-100 d-flex bg-light shadow-sm align-items-center align-content-center`}>
+          className={`min-vh-100 lg:flex bg-light shadow-sm items-center content-center`}>
           <div
             className={`col-md-5 d-flex align-items-center justify-content-center`}>
             <img
@@ -41,9 +41,6 @@ const HomeSection = () => {
               </h3>
             </div>
           </div>
-          {/* <div className={`col-md-7 max-w-70`}>
-         
-          </div> */}
         </div>
       </div>
     </section>
