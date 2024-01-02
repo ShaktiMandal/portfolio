@@ -70,7 +70,7 @@ const ContactSection = () => {
               <a
                 href="https://github.com/s2304"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 className={classes.socialMedia}
                 style={{ padding: "5px" }}>
                 <AiFillGithub
@@ -81,7 +81,7 @@ const ContactSection = () => {
               </a>
               <a
                 href="https://www.linkedin.com/in/shaktishankarmandal"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
                 className={classes.socialMedia}
                 style={{ padding: "5px" }}>

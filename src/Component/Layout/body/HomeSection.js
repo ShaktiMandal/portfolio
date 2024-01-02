@@ -13,7 +13,7 @@ const HomeSection = () => {
   }, 500);
 
   return (
-    <section className={"py-3"}>
+    <section className={"py-3"} id="homeSection">
       <div className={`container-fluid `}>
         <div
           className={`min-vh-100 lg:flex bg-light shadow-sm items-center content-center`}>

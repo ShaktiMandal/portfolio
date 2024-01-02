@@ -14,14 +14,14 @@ const Navbar = () => {
     <nav>
       <div className="container mx-auto flex items-center justify-between p-2">
         <div className="text-white font-bold text-xl flex items-center">
-          <a className={`navbar-brand text-danger`} href="#">
+          <a className={`navbar-brand text-danger`} href="#homeSection">
             <p className={classes.logoStyle}>Shakti</p>
           </a>
         </div>
 
         {/* Menu for larger screens */}
         <div className="hidden font-bold text-sm lg:flex space-x-4">
-          <a href="#" className="block text-black no-underline py-2">
+          <a href="#homeSection" className="block text-black no-underline py-2">
             Home
           </a>
           <a
@@ -69,7 +69,7 @@ const Navbar = () => {
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="lg:hidden mt-2 text-md lg:flex space-x-4">
-          <a href="#" className="block text-black no-underline py-2">
+          <a href="#homeSection" className="block text-black no-underline py-2">
             Home
           </a>
           <a
@@ -88,96 +88,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
-// const NavBar = () => {
-//   return (
-//     <nav role="navigation" className={`navbar navbar-expand-lg navbar-light`}>
-//       <div className={`container-lg`}>
-//         <a className={`navbar-brand text-danger`} href="#">
-//           <p className={classes.logoStyle}>Shakti</p>
-//         </a>
-//         <button
-//           className="navbar-toggler"
-//           type="button"
-//           data-toggle="collapse"
-//           data-target="#navbarSupportedContent"
-//           aria-controls="navbarSupportedContent"
-//           aria-expanded="false"
-//           aria-label="Toggle navigation">
-//           <span className="navbar-toggler-icon"></span>
-//         </button>
-//         <div
-//           className="collapse navbar-collapse lg:block"
-//           id="navbarSupportedContent">
-//           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ml-lg-auto flex flex-col lg:flex-row lg:justify-end">
-//             <li className="nav-item fw-bold">
-//               <a className="nav-link active" aria-current="page" href="#">
-//                 Home
-//               </a>
-//             </li>
-//             <li className="nav-item fw-bold">
-//               <a className="nav-link" href="#aboutSection">
-//                 Who am I
-//               </a>
-//             </li>
-//             <li className="nav-item fw-bold">
-//               <a className="nav-link" href="#portfolio">
-//                 Portfolio
-//               </a>
-//             </li>
-//             <li className="nav-item fw-bold">
-//               <a
-//                 className="nav-link"
-//                 href="#catchUp"
-//                 tabIndex="-1"
-//                 aria-disabled="true">
-//                 Let's catch up
-//               </a>
-//             </li>
-//           </ul>
-//         </div>
-
-//         {/* <button
-//           className={`navbar-toggler`}
-//           type="button"
-//           data-bs-toggle="collapse"
-//           data-bs-target="#navbarSupportedContent"
-//           aria-controls="navbarSupportedContent"
-//           aria-expanded="false"
-//           aria-label="Toggle navigation">
-//           <span className={`navbar-toggler-icon`}></span>
-//         </button>
-//         <div className={`collapse navbar-collapse`} id="navbarSupportedContent">
-//           <ul className={`navbar-nav me-auto mb-2 mb-lg-0 ml-lg-auto`}>
-//             <li className={`nav-item fw-bold`}>
-//               <a className={`nav-link active`} aria-current="page" href="#">
-//                 Home
-//               </a>
-//             </li>
-//             <li className={`nav-item fw-bold`}>
-//               <a className={`nav-link`} href="#aboutSection">
-//                 Who am i
-//               </a>
-//             </li>
-//             <li className={`nav-item fw-bold`}>
-//               <a className={`nav-link`} href="#portfolio">
-//                 portfolio
-//               </a>
-//             </li>
-//             <li className={`nav-item fw-bold`}>
-//               <a
-//                 className={`nav-link`}
-//                 href="#catchUp"
-//                 tabIndex="-1"
-//                 aria-disabled="true">
-//                 let's catch up
-//               </a>
-//             </li>
-//           </ul>
-//         </div> */}
-//       </div>
-//     </nav>
-//   );
-// };
 
 export default Navbar;
